@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'))
 }
 
-app.get('/api/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello World')
 })
 
