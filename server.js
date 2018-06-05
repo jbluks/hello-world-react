@@ -10,6 +10,11 @@ app.get('/api', (req, res) => {
   res.send('Hello World')
 })
 
+app.get('*', (req, res) => {
+  res.sendFile('index.html',{root: __dirname + './../build'})
+})
+
+
 app.listen(port, () => {
   console.log(`listening on PORT ${port}`)
 })
