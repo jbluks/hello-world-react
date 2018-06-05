@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/api', (req, res) => {
-  res.send('Hello World')
+  res.send('Hello World. This is an AWS Demo.')
 })
 
 app.get('*', (req, res) => {
